@@ -1,9 +1,13 @@
 import { Container } from '../../utils';
 import { useSelector } from 'react-redux';
-
+ 
 const Banner = () => {
+  
     const data = useSelector(state=>state.searchData);
     console.log(data)
+
+   
+
   return (
    <Container>
      <div className='bg-banner bg-cover bg-center rounded-[20px] h-[400px] mt-[50px] overflow-hidden'>
@@ -16,6 +20,7 @@ const Banner = () => {
     </div>
     </div>
 
+      
    </Container>
   )
 }
